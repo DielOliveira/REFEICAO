@@ -1,0 +1,66 @@
+<p id="notice"><%= notice %></p>
+
+<% content_for :titlePage do %>
+  Exibir Clientes
+<% end %>
+
+<%= render 'layouts/panel' %>
+
+<div class="containermininmo">
+
+<p>
+  <strong>Desc nome:</strong>
+  <%= @cliente.DESC_Nome %>
+</p>
+
+<p>
+  <strong>Numr cpf:</strong>
+  <%= @cliente.NUMR_CPF %>
+</p>
+
+<p>
+  <strong>Desc telefonecelular:</strong>
+  <%= @cliente.DESC_TelefoneCelular %>
+</p>
+
+<p>
+  <strong>Desc telefonefixo:</strong>
+  <%= @cliente.DESC_TelefoneFixo %>
+</p>
+
+<p>
+  <strong>Desc email:</strong>
+  <%= @cliente.DESC_Email %>
+</p>
+
+<p>
+  <strong>Desc secao:</strong>
+  <%= @cliente.DESC_Secao %>
+</p>
+
+<p>
+  <strong>Desc observacao:</strong>
+  <%= @cliente.DESC_Observacao %>
+</p>
+
+</div>
+
+</div></div>
+<table style="margin-top:10px;"> 
+  <tr>
+    <td align="center" style="width:50px;">
+      <%= link_to image_tag('edit.png', title: 'Editar', class: 'exibirico') , edit_cliente_path(@cliente) %>
+    </td>
+    <td align="center" style="width:20px;">
+      <%= link_to image_tag('back.png', title: 'Voltar',class: 'exibirico') , clientes_path %>
+    </td>
+  </tr>
+  <tr>
+    <td align="center" style="width:20px;">
+      <label class="altBotoes">Editar</label>
+    </td>
+    <td align="center" style="width:20px;">
+      <label class="altBotoes">Voltar</label>
+    </td>
+  </tr> 
+</table>

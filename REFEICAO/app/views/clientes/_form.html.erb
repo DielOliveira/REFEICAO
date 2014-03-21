@@ -1,0 +1,45 @@
+<%= form_for(@cliente) do |f| %>
+  <% if @cliente.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@cliente.errors.count, "error") %> prohibited this cliente from being saved:</h2>
+
+      <ul>
+      <% @cliente.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+<div class="containermininmo">
+  
+  <div class="field">
+    <%= f.label :DESC_Nome %><br>
+    <%= f.text_field :DESC_Nome %>
+  </div>
+  <div class="field">
+    <%= f.label :NUMR_CPF %><br>
+    <%= f.text_field :NUMR_CPF %>
+  </div>
+  <div class="field">
+    <%= f.label :DESC_TelefoneCelular %><br>
+    <%= f.text_field :DESC_TelefoneCelular %>
+  </div>
+  <div class="field">
+    <%= f.label :DESC_TelefoneFixo %><br>
+    <%= f.text_field :DESC_TelefoneFixo %>
+  </div>
+  <div class="field">
+    <%= f.label :DESC_Email %><br>
+    <%= f.text_field :DESC_Email %>
+  </div>
+  <div class="field">
+    <%= f.label :DESC_Secao %><br>
+    <%= f.text_field :DESC_Secao %>
+  </div>
+  <div class="field">
+    <%= f.label :DESC_Observacao %><br>
+    <%= f.text_field :DESC_Observacao %>
+  </div>
+<%=render '/layouts/iconsalvar' %>
+<% end %>

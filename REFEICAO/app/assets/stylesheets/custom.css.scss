@@ -1,0 +1,225 @@
+
+
+@import "bootstrap";
+
+@import "bootstrap-responsive";
+
+/* mixins, variables, etc. */
+
+$grayMediumLight: #eaeaea;
+
+@mixin box_sizing {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* universal */
+
+html {
+  overflow-y: scroll;
+}
+
+
+section {
+  overflow: auto;
+}
+
+textarea {
+  resize: vertical;
+}
+
+.center {
+  text-align: center;
+  h1 {
+    margin-bottom: 10px;
+  }
+}
+
+/* typography */
+
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1;
+}
+
+h6 {
+  text-align: center;
+}
+
+h1, h2, h3, h4{
+  text-align: center;
+  color:#006983
+}
+
+
+p {
+  font-size: 1.1em;
+  line-height: 1.7em;
+}
+
+
+
+
+/* footer */
+
+footer {
+  margin-top: 45px;
+  padding-top: 5px;
+  border-top: 1px solid $grayMediumLight;
+  color: $grayLight;
+  a {
+    color: $gray;
+    &:hover {
+      color: $grayDarker;
+    }
+  }
+  small {
+    float: left;
+  }
+  ul {
+    float: right;
+    list-style: none;
+    li {
+      float: left;
+      margin-left: 10px;
+    }
+  }
+}
+
+/* miscellaneous */
+
+.debug_dump {
+  clear: both;
+  float: left;
+  width: 100%;
+  margin-top: 45px;
+  @include box_sizing;
+}
+
+/* sidebar */
+
+aside {
+  section {
+    padding: 10px 0;
+    border-top: 1px solid $grayLighter;
+    &:first-child {
+      border: 0;
+      padding-top: 0;
+    }
+    span {
+      display: block;
+      margin-bottom: 3px;
+      line-height: 1;
+    }
+    h1 {
+      font-size: 1.4em;
+      text-align: left;
+      letter-spacing: -1px;
+      margin-bottom: 3px;
+      margin-top: 0px;
+    }
+  }
+}
+
+.gravatar {
+  float: left;
+  margin-right: 10px;
+}
+
+
+/* forms */
+
+.form-control-5 {
+  width: 500px;
+}
+
+.form-control-4 {
+  width: 400px;
+}
+
+.form-control-3 {
+  width: 300px;
+}
+
+.form-control-2 {
+  width: 200px;
+}
+
+.form-control-1 {
+  width: 100px;
+}
+
+.form-control-100 {
+  width: 95%;
+}
+
+.containermininmo {
+  width:100%;
+  overflow:auto;
+}
+
+.altBotoes{
+  font-size: 1em;  
+  color: gray;
+}
+
+.lblForms{
+  color:#006983;
+}
+
+
+input {
+  height: auto !important;
+}
+
+a:hover img {
+  border: none !important;
+  display: block;
+}
+
+.titleTable {
+  color:#006983;
+}
+
+.titlepage{
+  
+  color:white;
+}
+
+.exibirico
+{
+  opacity:0.4;
+  filter:alpha(opacity=40); /* For IE8 and earlier */
+}
+
+.exibirico:hover
+{
+  opacity:1.0;
+  filter:alpha(opacity=100); /* For IE8 and earlier */
+}
+
+#scroll {
+  width:100%;
+  height:600px;
+  overflow:auto;
+}
+
+.divchat{
+  margin-top:20px;
+  margin-button:10px;
+  border-radius: 5px; 
+  width:500px;
+  background-color:#E1FFDB;
+  border: solid 1px;
+  border-color:#5AD043;
+  div{
+    margin-left:10px;
+    margin-top:5px;
+  }
+}
+
+.txtareachat {
+  width:80%; 
+  float:left;
+
+}

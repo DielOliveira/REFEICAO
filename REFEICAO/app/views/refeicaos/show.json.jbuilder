@@ -1,0 +1,1 @@
+json.extract! @refeicao, :id, :DATE_Refeicao, :DESC_Refeicao, :TIPO_Refeicao, :DESC_Acompanhamento, :VALOR_Refeicao, :VALOR_Acompanhamento, :DESC_Observacao, :created_at, :updated_at

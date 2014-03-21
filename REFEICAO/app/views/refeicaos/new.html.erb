@@ -1,0 +1,14 @@
+
+<% content_for :titlePage do %>
+  Cadastro de  Refeições
+<% end %>
+
+<%=render '/layouts/panel' %>
+
+<%= render 'form' %>
+
+<% content_for :pathback do %>
+  <%= refeicaos_path%>
+<% end %>
+
+<%= render '/layouts/iconvoltar' %>

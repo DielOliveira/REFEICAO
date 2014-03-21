@@ -1,0 +1,46 @@
+<%= form_for(@refeicao) do |f| %>
+  <% if @refeicao.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@refeicao.errors.count, "error") %> prohibited this refeicao from being saved:</h2>
+
+      <ul>
+      <% @refeicao.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="containermininmo">
+
+  <div class="field">
+    <%= f.label :DATE_Refeicao %><br>
+    <%= f.date_select :DATE_Refeicao %>
+  </div>
+  <div class="field">
+    <%= f.label :DESC_Refeicao %><br>
+    <%= f.text_field :DESC_Refeicao %>
+  </div>
+  <div class="field">
+    <%= f.label :TIPO_Refeicao %><br>
+    <%= f.text_field :TIPO_Refeicao %>
+  </div>
+  <div class="field">
+    <%= f.label :DESC_Acompanhamento %><br>
+    <%= f.text_field :DESC_Acompanhamento %>
+  </div>
+  <div class="field">
+    <%= f.label :VALOR_Refeicao %><br>
+    <%= f.text_field :VALOR_Refeicao %>
+  </div>
+  <div class="field">
+    <%= f.label :VALOR_Acompanhamento %><br>
+    <%= f.text_field :VALOR_Acompanhamento %>
+  </div>
+  <div class="field">
+    <%= f.label :DESC_Observacao %><br>
+    <%= f.text_field :DESC_Observacao %>
+  </div>
+
+  <%=render '/layouts/iconsalvar' %>
+<% end %>

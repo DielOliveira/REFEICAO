@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  DATE_Refeicao: 2014-03-20
+  DESC_Refeicao: MyString
+  TIPO_Refeicao: MyString
+  DESC_Acompanhamento: MyString
+  VALOR_Refeicao: 9.99
+  VALOR_Acompanhamento: 9.99
+  DESC_Observacao: MyString
+
+two:
+  DATE_Refeicao: 2014-03-20
+  DESC_Refeicao: MyString
+  TIPO_Refeicao: MyString
+  DESC_Acompanhamento: MyString
+  VALOR_Refeicao: 9.99
+  VALOR_Acompanhamento: 9.99
+  DESC_Observacao: MyString
